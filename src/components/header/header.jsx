@@ -7,7 +7,6 @@ const Header = () => {
 
     return (
         <div className="header">
-            by.frosy.production
             <sapn className={'username'}>  
                 {user?.first_name} {user?.last_name}
             </sapn>
