@@ -9,7 +9,10 @@ const Header = () => {
         <div className="header">
             by.frosy.production
             <sapn className={'username'}>  
-                {user?.username}
+                {user?.first_name} {user?.last_name}
+            </sapn>
+            <sapn className={'id'}>  
+                {user?.id}
             </sapn>
         </div>
     );
