@@ -19,8 +19,6 @@ function App() {
 
       <Header />
 
-      <span className='userinfo'>{userinfo}</span>
-
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
   );

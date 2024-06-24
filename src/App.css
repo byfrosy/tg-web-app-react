@@ -15,7 +15,3 @@ body {
   color: var(--tg-theme-text-color);
   font-family: 'Montserrat', sans-serif;
 }
-
-.userinfo {
-  color: white;
-}
