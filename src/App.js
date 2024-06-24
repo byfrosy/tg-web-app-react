@@ -19,7 +19,7 @@ function App() {
 
       <Header />
 
-      <span>{userinfo}</span>
+      <span className='userinfo'>{userinfo}</span>
 
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
