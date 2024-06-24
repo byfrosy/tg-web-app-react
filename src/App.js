@@ -6,7 +6,7 @@ import Header from "./components/header/header";
 
 function App() {
 
-  const {onClose, tg} = useTelegram();
+  const {onClose, tg, user} = useTelegram();
 
   useEffect ( () => {
     tg.ready();
@@ -16,7 +16,9 @@ function App() {
     <div className="App">
 
       <Header />
-      
+
+      <span>{user}</span>
+
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
   );
