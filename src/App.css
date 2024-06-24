@@ -33,9 +33,19 @@ body {
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
   color: transparent; /* Делаем текст прозрачным */
-  animation: gradientAnimation 10s linear infinite; /* Добавляем анимацию */
+  animation: gradientAnimation 2s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
   margin: 10px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
+}
+
+.LoadingText.h1 {
+  font-size: 16px; /* размер шрифта для h1 */
+  font-weight: bold; /* жирность шрифта для h1 */
+}
+
+.LoadingText span {
+  font-size: 12px; /* размер шрифта для span */
+  font-weight: italic; /* обычный шрифт для span */
 }
 
 @keyframes gradientAnimation {
