@@ -44,7 +44,7 @@
   }
   
   .profile-name {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: bold;
   }
   
@@ -78,7 +78,10 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 8px;
+    color: white;
+    width: 90px; /* Ширина кнопки */
+    height: 25px; /* Высота кнопки */
   }
   
   .recharge-button:hover {
