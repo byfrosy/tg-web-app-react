@@ -21,7 +21,7 @@ const Header = () => {
 
                 <div className="profile">
                     <img src="{user?.photo_url}" alt="Profile" className="profile-image" />
-                    <span>{user?.photo_url}</span>
+                    {user?.photo_url}
 
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
