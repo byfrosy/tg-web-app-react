@@ -28,31 +28,43 @@ body {
 
 .LoadingText {
   font-family: 'Montserrat', sans-serif;
-  /* font-weight: bold; Жирный шрифт */
-  background: linear-gradient(to right, #ffffff, #999999, #ffffff);
-  -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
-  background-clip: text; /* Применяем градиент только к тексту */
-  color: transparent; /* Делаем текст прозрачным */
-  animation: gradientAnimation 2s linear infinite; /* Добавляем анимацию */
-  text-align: center; /* выравнивание текста по центру */
-  margin: 10px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
+  text-align: center;
+  margin: 5px 0;
+  position: relative; /* для позиционирования псевдоэлемента */
+  font-size: 24px; /* размер шрифта */
+  font-weight: bold; /* жирность шрифта */
+  color: transparent; /* делаем текст прозрачным */
 }
 
-.LoadingText.h1 {
-  font-size: 16px; /* размер шрифта для h1 */
-  font-weight: bold; /* жирность шрифта для h1 */
-}
-
-.LoadingText span {
-  font-size: 12px; /* размер шрифта для span */
-  font-weight: italic; /* обычный шрифт для span */
+.LoadingText::before {
+  content: attr(data-text); /* используем атрибут data-text как текст псевдоэлемента */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, #999999, #ffffff); /* градиентный фон */
+  -webkit-background-clip: text; /* применяем градиент только к тексту для WebKit (Chrome, Safari) */
+  background-clip: text; /* применяем градиент только к тексту */
+  color: transparent; /* делаем текст прозрачным */
+  animation: gradientAnimation 2s linear infinite; /* добавляем анимацию */
 }
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% center; /* начальная позиция градиента */
+    background-position: -200%; /* начальная позиция градиента */
   }
   100% {
-    background-position: 100% center; /* конечная позиция градиента */
+    background-position: 200%; /* конечная позиция градиента */
   }
+}
+
+.LoadingText.h1 {
+  font-size: 14px; /* размер шрифта для h1 */
+  font-weight: bold; /* жирность шрифта для h1 */
+}
+
+.LoadingText span {
+  font-size: 10px; /* размер шрифта для span */
+  font-weight: italic; /* обычный шрифт для span */
 }
