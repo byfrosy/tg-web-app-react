@@ -5,7 +5,7 @@
     align-items: center;
     padding: 0 20px; */
     background-color: #1c1c3b;
-    padding: 10px 10px;
+    padding: 10px 5px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -24,7 +24,6 @@
 .profile {
     display: flex;
     align-items: center;
-    border: solid 1px;
 
   }
 
@@ -41,12 +40,12 @@
   }
   
   .profile-name {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: bold;
   }
   
   .profile-id {
-    font-size: 8px;
+    font-size: 10px;
   }
   
   .balance {
@@ -71,7 +70,7 @@
   .recharge-button {
     background-color: #00c6a2;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 8px;
