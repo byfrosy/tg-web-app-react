@@ -1,5 +1,6 @@
 import React from "react";
 import { useTelegram } from "../../hooks/useTelegram";
+import './header.css';
 
 const Header = () => {
 
@@ -20,7 +21,8 @@ const Header = () => {
 
                 <div className="profile">
                     <img src="{user?.photo_url}" alt="Profile" className="profile-image" />
-                    
+                    <span>{user?.photo_url}</span>
+
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
                         <div className="profile-id">id: {user?.id}</div>
