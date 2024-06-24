@@ -31,7 +31,6 @@ body {
   text-align: center;
   margin: 5px 0;
   position: relative; /* для позиционирования псевдоэлемента */
-  font-size: 24px; /* размер шрифта */
   font-weight: bold; /* жирность шрифта */
   color: transparent; /* делаем текст прозрачным */
 }
