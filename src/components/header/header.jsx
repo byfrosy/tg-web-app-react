@@ -7,25 +7,18 @@ const Header = () => {
     const {user, onClose} = useTelegram();
 
     return (
-        // <div className="header">
-        //     <sapn className={'username'}>  
-        //         {user?.first_name} {user?.last_name}
-        //     </sapn>
-        //     <sapn className={'id'}>  
-        //         {user?.id}
-        //     </sapn>
-        // </div>
-
         <div className="header">
             <div className="header-content">
 
                 <div className="profile">
                     <img src="{user?.photo_url}" alt="Profile" className="profile-image" />
-                    {user?.photo_url}
 
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
                         <div className="profile-id">id: {user?.id}</div>
+                        <a href={user?.photo_url} target="_blank" rel="noopener noreferrer" className="profile-image-link">
+                            Открыть фотографию
+                        </a>
                     </div>
                 </div>
 
