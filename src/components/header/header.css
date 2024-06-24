@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     padding: 0 20px; */
-    background-color: #1c1c3b;
-    padding: 10px 5px;
+    background: url('/img/header.png') no-repeat center center, #1c1c3b;
+    background-size: cover;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -38,7 +39,7 @@
   }
   
   .profile-name {
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
   }
   
