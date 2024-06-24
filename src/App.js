@@ -8,7 +8,7 @@ function App() {
 
   const userinfo = window.Telegram.WebApp.initDataUnsafe?.user;
 
-  const {onClose, tg, user} = useTelegram();
+  const {user, onClose, tg} = useTelegram();
 
   useEffect ( () => {
     tg.ready();
@@ -18,6 +18,7 @@ function App() {
     <div className="App">
 
       <Header />
+      <img src={user?.photo_url} alt="Profile" className="profile-image" />
 
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
