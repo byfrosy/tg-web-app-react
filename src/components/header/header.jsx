@@ -13,7 +13,11 @@ const Header = () => {
 
                 <div className="profile">
 
-                    <img src={user?.photo_url} alt="Profile" className="profile-image" />
+                    {user?.photo_url ? (
+                            <img src={user.photo_url} alt="User Photo" />
+                        ) : (
+                            <p>No photo available</p>
+                        )}
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
                         <div className="profile-id">id: {user?.id}</div>
