@@ -11,7 +11,11 @@ const Header = () => {
             <div className="header-content">
 
                 <div className="profile">
-                    <img src={user?.photo_url} alt="Profile" className="profile-image" />
+                    {user?.photo_url ? (
+                        <img src={user.photo_url} alt="Profile" className="profile-image" />
+                        ) : (
+                            <p>No profile image available</p>
+                        )}
 
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
