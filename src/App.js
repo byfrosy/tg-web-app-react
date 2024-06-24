@@ -6,8 +6,6 @@ import Header from "./components/header/header";
 
 function App() {
 
-  const userinfo = window.Telegram.WebApp.initDataUnsafe?.user;
-
   const {user, onClose, tg} = useTelegram();
 
   useEffect ( () => {
