@@ -16,9 +16,6 @@ const Header = () => {
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
                         <div className="profile-id">id: {user?.id}</div>
-                        <a href={user?.photo_url} target="_blank" rel="noopener noreferrer" className="profile-image-link">
-                            Открыть фотографию
-                        </a>
                     </div>
                 </div>
 
@@ -30,6 +27,7 @@ const Header = () => {
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
 
             </div>
+            {user}
         </div>
     );
 };
