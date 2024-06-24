@@ -28,7 +28,7 @@ body {
 .LoadingText {
   font-family: 'Montserrat', sans-serif;
   /* font-weight: bold; Жирный шрифт */
-  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
+  background: linear-gradient(to right, #ffffff, #999999, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
   color: transparent; /* Делаем текст прозрачным */
