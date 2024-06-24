@@ -18,6 +18,7 @@ body {
 
 .LoadingBG {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -33,6 +34,8 @@ body {
   background-clip: text; /* Применяем градиент только к тексту */
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 10s linear infinite; /* Добавляем анимацию */
+  text-align: center; /* выравнивание текста по центру */
+  margin: 10px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
 
 @keyframes gradientAnimation {
