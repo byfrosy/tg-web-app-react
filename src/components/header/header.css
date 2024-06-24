@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px; */
-    background: url('/img/header.png') no-repeat center center, #1c1c3b;
+    background: url('./img/header.png') no-repeat center center, #1c1c3b;
     background-size: cover;
     padding: 10px 15px;
     display: flex;
