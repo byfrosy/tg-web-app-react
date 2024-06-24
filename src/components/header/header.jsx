@@ -27,7 +27,6 @@ const Header = () => {
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
 
             </div>
-            {user}
         </div>
     );
 };
