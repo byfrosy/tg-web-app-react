@@ -22,12 +22,17 @@ body {
   align-items: center;
   height: 100vh;
   background: url('./img/louding_fon.webp') no-repeat center center, #1c1c3b;
+  background-size: cover;
 }
 
 .LoadingText {
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: bold; Жирный шрифт */
   background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
-  background-size: 200% auto; /* увеличиваем размер фона для создания эффекта перелива */
-  animation: gradientAnimation 10s linear infinite; /* добавляем анимацию */
+  -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
+  background-clip: text; /* Применяем градиент только к тексту */
+  color: transparent; /* Делаем текст прозрачным */
+  animation: gradientAnimation 10s linear infinite; /* Добавляем анимацию */
 }
 
 @keyframes gradientAnimation {
