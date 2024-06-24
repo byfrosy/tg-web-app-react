@@ -6,6 +6,8 @@ import Header from "./components/header/header";
 
 function App() {
 
+  const userinfo = window.Telegram.WebApp.initDataUnsafe?.user;
+
   const {onClose, tg, user} = useTelegram();
 
   useEffect ( () => {
@@ -17,7 +19,7 @@ function App() {
 
       <Header />
 
-      <span>{user}</span>
+      <span>{userinfo}</span>
 
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
