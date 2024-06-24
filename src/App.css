@@ -15,3 +15,26 @@ body {
   color: var(--tg-theme-text-color);
   font-family: 'Montserrat', sans-serif;
 }
+
+.LoadingBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./img/louding_fon.webp') no-repeat center center, #1c1c3b;
+}
+
+.LoadingText {
+  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
+  background-size: 200% auto; /* увеличиваем размер фона для создания эффекта перелива */
+  animation: gradientAnimation 10s linear infinite; /* добавляем анимацию */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% center; /* начальная позиция градиента */
+  }
+  100% {
+    background-position: 100% center; /* конечная позиция градиента */
+  }
+}

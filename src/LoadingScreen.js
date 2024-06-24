@@ -1,22 +1,14 @@
 // LoadingScreen.js
 import React from 'react';
+import './App.css';
 
 const LoadingScreen = () => {
   return (
-    <div style={styles.container}>
-      <h1>Loading...</h1>
+    <div className='LoadingBG'>
+      <h1 className='LoadingText'>Match Prediction</h1>
     </div>
   );
 };
 
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#1c1c3b',
-  },
-};
 
 export default LoadingScreen;
