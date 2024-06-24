@@ -18,7 +18,7 @@ function App() {
     <div className="App">
 
       <Header />
-      <img src={user?.photo_url} alt="Profile" className="profile-image" />
+      <img src={user?.photo_url} alt="Profile"/>
 
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
