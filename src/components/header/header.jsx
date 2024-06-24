@@ -6,17 +6,14 @@ const Header = () => {
 
     const {user, onClose} = useTelegram();
 
+
     return (
         <div className="header">
             <div className="header-content">
 
                 <div className="profile">
-                    {user?.photo_url ? (
-                        <img src={user.photo_url} alt="Profile" className="profile-image" />
-                        ) : (
-                            <p>No profile image available</p>
-                        )}
 
+                    <img src={user?.photo_url} alt="Profile" className="profile-image" />
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
                         <div className="profile-id">id: {user?.id}</div>
