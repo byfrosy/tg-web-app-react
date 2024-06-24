@@ -16,7 +16,8 @@ function App() {
     <div className="App">
 
       <Header />
-      <button onClick={onClose}>Закрыть</button>
+      
+      {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
   );
 }

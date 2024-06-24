@@ -16,13 +16,19 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
     margin: auto;
+
+    border: 1px solid black;
   }
 
 .profile {
     display: flex;
     align-items: center;
+    border: solid 1px;
+
+    border: 1px solid black;
+
+
   }
 
   .profile-image {
@@ -38,12 +44,12 @@
   }
   
   .profile-name {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
   }
   
   .profile-id {
-    font-size: 12px;
+    font-size: 8px;
     color: #ccc;
   }
   
@@ -53,15 +59,17 @@
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
+
+    border: 1px solid black;
   }
   
   .balance-text {
-    font-size: 14px;
+    font-size: 8px;
     font-weight: bold;
   }
   
   .balance-amount {
-    font-size: 20px;
+    font-size: 8px;
     font-weight: bold;
   }
   
