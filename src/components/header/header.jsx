@@ -30,7 +30,6 @@ const Header = () => {
                 </div>
 
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
-                <span> Ссылка на фото: {user?.photo_url} Имя:{user?.first_name} {user?.last_name}</span>
             </div>
         </div>
     );

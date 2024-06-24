@@ -71,7 +71,8 @@
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 8px;
+    font-size: 10px;
+    font-weight: bold;
     color: white;
     width: 90px; /* Ширина кнопки */
     height: 25px; /* Высота кнопки */
