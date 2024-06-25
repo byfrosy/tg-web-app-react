@@ -27,26 +27,18 @@ body {
 }
 
 .LoadingText {
-  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-family: 'Montserrat';
   /* font-weight: bold; Жирный шрифт */
-  background: linear-gradient(to right, #ffffff, #999999, #ffffff);
+  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
   color: transparent; /* Делаем текст прозрачным */
-  animation: gradientAnimation 1s linear infinite; /* Добавляем анимацию */
+  animation: gradientAnimation 1 s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
   margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
 
-.LoadingText.h1 {
-  font-size: 14px; /* размер шрифта для h1 */
-  font-weight: bold; /* жирность шрифта для h1 */
-}
-
-.LoadingText span {
-  font-size: 10px; /* размер шрифта для span */
-  font-weight: italic; /* обычный шрифт для span */
-}
 
 @keyframes gradientAnimation {
   0% {
