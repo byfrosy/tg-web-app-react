@@ -1,4 +1,5 @@
 .header { 
+    width: 100%;
     background: url('./img/header.png') no-repeat center center, #1c1c3b;
     background-size: cover;
     padding: 10px 15px;
