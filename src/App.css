@@ -32,24 +32,28 @@ body {
   background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
+  background-size: 400% 400%;
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 1 s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
   margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
-.LoadingText.h1 {
+.LoadingText h1 {
   font-size: 12px;
 }
-.LoadingText.span {
+.LoadingText span {
   font-size: 8px;
 }
 
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% center; /* начальная позиция градиента */
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 100% center; /* конечная позиция градиента */
+    background-position: 0% 50%;
   }
 }
