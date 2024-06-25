@@ -28,7 +28,7 @@ body {
 }
 
 .LoadingTexth1 {
-  font-size: 16px;
+  font-size: 24px;
   /* font-weight: bold; Жирный шрифт */
   background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
