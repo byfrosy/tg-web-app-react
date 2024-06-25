@@ -42,12 +42,12 @@ body {
 .LoadingTextspan {
   font-size: 12px;
   /* font-weight: bold; Жирный шрифт */
-  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
+  background: linear-gradient(to right, #ffffff, #999999, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
   background-size: 400% 400%;
   color: transparent; /* Делаем текст прозрачным */
-  animation: gradientAnimation 1 s linear infinite; /* Добавляем анимацию */
+  animation: gradientAnimation 500ms linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
   margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
