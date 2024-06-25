@@ -27,7 +27,6 @@ body {
 }
 
 .LoadingText {
-  font-size: 8px;
   font-family: 'Montserrat';
   /* font-weight: bold; Жирный шрифт */
   background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
@@ -37,6 +36,12 @@ body {
   animation: gradientAnimation 1 s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
   margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
+}
+.LoadingText.h1 {
+  font-size: 12px;
+}
+.LoadingText.span {
+  font-size: 8px;
 }
 
 
