@@ -30,26 +30,26 @@ body {
 .LoadingTextspan1 {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
+  background: linear-gradient(to right, #ffffff, #bbbbbb);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
-  background-size: 200% 200%;
+  background-size: 400% 400%;
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 1s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
-  /* margin: 5px 0; настройка внешних отступов, чтобы создать пространство между элементами */
+  /* margin: 5px 0; */
 }
 .LoadingTextspan2 {
   font-size: 12px;
   /* font-weight: bold; Жирный шрифт */
-  background: linear-gradient(to right, #ffffff, #999999, #ffffff);
+  background: linear-gradient(to right, #ffffff, #999999);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
   background-clip: text; /* Применяем градиент только к тексту */
-  background-size: 200% 200%;
+  background-size: 400% 400%;
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 1s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
-  /* margin: 5px 0; настройка внешних отступов, чтобы создать пространство между элементами */
+  /* margin: 5px 0; */
 }
 
 
@@ -57,7 +57,10 @@ body {
   0% {
     background-position: 0% 50%;
   }
-  100% {
+  50% {
     background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
