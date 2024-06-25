@@ -1,9 +1,4 @@
 .header { 
-    /* width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px; */
     background: url('./img/header.png') no-repeat center center, #1c1c3b;
     background-size: cover;
     padding: 10px 15px;
@@ -11,6 +6,9 @@
     justify-content: space-between;
     color: white;
     font-family: 'Montserrat';
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header-content {
