@@ -12,13 +12,8 @@ function App() {
     // Метод ready() сообщит приложению Telegram, что Mini App готов к отображению
     tg.ready();
 
-    // Установим задержку перед отключением состояния загрузки
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 7000); // Задержка 2 секунды
+    setLoading(false);
 
-    // Очистка таймера при размонтировании компонента
-    return () => clearTimeout(timer);
   }, [tg]);
 
   if (loading) {
