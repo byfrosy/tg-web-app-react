@@ -37,7 +37,7 @@ body {
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 3s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
-  margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
+  /* margin: 5px 0; настройка внешних отступов, чтобы создать пространство между элементами */
 }
 .LoadingTextspan2 {
   font-size: 12px;
@@ -49,7 +49,7 @@ body {
   color: transparent; /* Делаем текст прозрачным */
   animation: gradientAnimation 3s linear infinite; /* Добавляем анимацию */
   text-align: center; /* выравнивание текста по центру */
-  margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
+  /* margin: 5px 0; настройка внешних отступов, чтобы создать пространство между элементами */
 }
 
 
@@ -57,10 +57,7 @@ body {
   0% {
     background-position: 0% 50%;
   }
-  50% {
-    background-position: 100% 50%;
-  }
   100% {
-    background-position: 0% 50%;
+    background-position: 100% 50%;
   }
 }
