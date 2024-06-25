@@ -17,6 +17,7 @@ body {
 }
 
 .LoadingBG {
+  font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +27,8 @@ body {
   background-size: cover;
 }
 
-.LoadingText {
-  font-family: 'Montserrat';
+.LoadingTexth1 {
+  font-size: 10px;
   /* font-weight: bold; Жирный шрифт */
   background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
   -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
@@ -38,11 +39,17 @@ body {
   text-align: center; /* выравнивание текста по центру */
   margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
-.LoadingText h1 {
-  font-size: 12px;
-}
-.LoadingText span {
+.LoadingTextspan {
   font-size: 8px;
+  /* font-weight: bold; Жирный шрифт */
+  background: linear-gradient(to right, #ffffff, #bbbbbb, #ffffff);
+  -webkit-background-clip: text; /* Применяем градиент только к тексту для WebKit (Chrome, Safari) */
+  background-clip: text; /* Применяем градиент только к тексту */
+  background-size: 400% 400%;
+  color: transparent; /* Делаем текст прозрачным */
+  animation: gradientAnimation 1 s linear infinite; /* Добавляем анимацию */
+  text-align: center; /* выравнивание текста по центру */
+  margin: 5px 0; /* настройка внешних отступов, чтобы создать пространство между элементами */
 }
 
 
