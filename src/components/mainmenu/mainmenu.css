@@ -1,0 +1,26 @@
+/* mainmenu.css */
+.mainmenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000; /* Убедитесь, что ваш footer будет выше других элементов */
+  }
+  
+  .mainmenu-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .mainmenu-button:hover {
+    background-color: #e0e0e0;
+  }
+  
