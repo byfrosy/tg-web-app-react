@@ -3,7 +3,7 @@
     background: url('./img/header.png') no-repeat center center #1c1c3b;
     background-size: cover;
     padding: 50px 15px 10px 15px;
-    display: flex;
+    display: fixed;
     justify-content: space-between;
     color: white;
     font-family: 'Montserrat';
@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     z-index: 1000; /* установлен z-index */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 

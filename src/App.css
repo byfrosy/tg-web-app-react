@@ -11,8 +11,8 @@
 }
 
 body {
-  background: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
+  background: #ececec; 
+  color: #000000;
   font-family: 'Montserrat', sans-serif;
 }
 
