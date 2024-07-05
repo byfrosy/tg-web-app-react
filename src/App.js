@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <span>Матчи на сегодня</span>
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
   );
