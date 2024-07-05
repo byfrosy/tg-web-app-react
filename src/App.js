@@ -24,8 +24,6 @@ function App() {
     <div className="App">
       <Header />
       <span>Матчи на сегодня</span>
-
-      <Maimenu />
       {/* <button onClick={onClose}>Закрыть</button> */}
     </div>
   );
