@@ -31,11 +31,11 @@ const Header = () => {
             {loading ? (
                 <span>Loading...</span>
             ) : error ? (
-                <span>Error: {error.message}</span>
+                <span>Error: {error.message || JSON.stringify(error)}</span>
             ) : (
                 <span>{data?.balance} Р</span>
             )}
-            
+
         </div>
     );
 };
