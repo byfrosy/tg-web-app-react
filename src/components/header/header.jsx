@@ -27,7 +27,15 @@ const Header = () => {
 
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
             </div>
-            <span>{loading ? 'Loading...' : error ? 'Error' : `${data?.balance} Р`}</span>
+
+            {loading ? (
+                <span>Loading...</span>
+            ) : error ? (
+                <span>Error: {error.message}</span>
+            ) : (
+                <span>{data?.balance} Р</span>
+            )}
+            
         </div>
     );
 };
