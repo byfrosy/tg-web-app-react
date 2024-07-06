@@ -22,11 +22,12 @@ const Header = () => {
 
                 <div className="balance">
                     <span className="balance-text">БАЛАНС</span>
-                    <span className="balance-amount">{loading ? 'Loading...' : error ? 'Error' : `${data?.balance} Р`}Р</span>
+                    <span className="balance-amount">Р</span>
                 </div>
 
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
             </div>
+            <span>{loading ? 'Loading...' : error ? 'Error' : `${data?.balance} Р`}</span>
         </div>
     );
 };
