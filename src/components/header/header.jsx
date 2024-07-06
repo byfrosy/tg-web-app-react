@@ -1,19 +1,18 @@
 import React from "react";
 import { useTelegram } from "../../hooks/useTelegram";
+import useFetchUserData from '../../hooks/useApi'; 
 import './header.css';
 
 const Header = () => {
 
     const {user, onClose} = useTelegram();
-
+    const { data, loading, error } = useFetchUserData();
 
     return (
         <div className="header">
             <div className="header-content">
 
                 <div className="profile">
-
-                    {/* <img src={user?.photo_url} alt="User Photo" /> */}
 
                     <div className="profile-info">
                         <div className="profile-name">{user?.first_name} {user?.last_name}</div>
@@ -23,7 +22,7 @@ const Header = () => {
 
                 <div className="balance">
                     <span className="balance-text">БАЛАНС</span>
-                    <span className="balance-amount">99 999 Р</span>
+                    <span className="balance-amount">{loading ? 'Loading...' : error ? 'Error' : `${data?.balance} Р`}Р</span>
                 </div>
 
                 <button className="recharge-button">ПОПОЛНИТЬ</button>
