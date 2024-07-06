@@ -1,6 +1,6 @@
 import React from "react";
 import { useTelegram } from "../../hooks/useTelegram";
-import useFetchUserData from '../../hooks/useApi'; 
+import { useFetchUserData } from '../../hooks/useApi'; 
 import './header.css';
 
 const Header = () => {

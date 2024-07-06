@@ -19,7 +19,7 @@ const useFetchUserData = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(`http://95.73.132.175:2000/user`, {
-                    params: { id: user.id }
+                    params: { id: user?.id }
                 });
                 setData(response.data);
             } catch (error) {
